@@ -160,6 +160,7 @@ void ValidateRange ()
     validRange = true;
 }
 */
+/*
 Random random = new Random();
 int luck = random.Next(100);
 
@@ -181,3 +182,4 @@ void DisplayFortune()
         Console.Write($"{text[i]} {fortune[i]} ");
     }
 }
+*/
