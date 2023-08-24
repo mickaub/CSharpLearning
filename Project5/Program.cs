@@ -368,25 +368,25 @@ string externalDomain = "hayworth.com";
 
 for (int i = 0; i < corporate.GetLength(0); i++) 
 {
-    // display internal email addresses
-}
+    string domain = internalDomain;
+    string firstName = corporate[i,0].ToLower();
+    string lastName = corporate[i,1].ToLower();
 
+    EmailAddress(domain, firstName, lastName);
+}
 for (int i = 0; i < external.GetLength(0); i++) 
 {
-    // display external email addresses
+    string domain = externalDomain;
+    string firstName = external[i,0].ToLower();
+    string lastName = external[i,1].ToLower();
+
+    EmailAddress(domain, firstName, lastName);
 }
 
-void EmailAddress(string domain, string[] name)
+void EmailAddress(string domain, string firstName, string lastName)
 {
-    string firstName = name[0];
-    string lastName = name[1];
-    string address = "";
-
-
-    if (domain == "contoso.com")
-    {
-
-    }
+    string firstNamePart = firstName.Substring(0,2);
+    string address = firstNamePart + lastName;
+    
+    Console.WriteLine($"{address}@{domain}");    
 }
-
-//UPTO part 6: Create C# methods with parameters: Unit 6 of 9 Exercise - Complete the challenge to display email addresses 
