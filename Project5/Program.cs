@@ -503,6 +503,7 @@ bool IsPalindrome(string word)
     return true;
 }
 */
+/*
 int target = 80;
 int[] coins = new int[]{5,5,50,25,25,10,5};
 int[,] result = TwoCoins(coins,target);
@@ -551,4 +552,56 @@ int[,] TwoCoins(int[] coins, int target)
     }
     return result;
 }
-//UPTO Create C# methods that return values Unit 7 of 10: Exercise - Complete the challenge to add methods to make the game playable
+*/
+using System.Runtime;
+
+Random random = new Random();
+
+Console.WriteLine("Would you like to play? (Y/N)");
+if (ShouldPlay()) 
+{
+    PlayGame();
+}
+
+bool ShouldPlay()
+{
+    string? input = Console.ReadLine();
+    if (input != null)
+    {
+        if(input == "Y")
+        {
+            return true;
+        }        
+    }
+    return false;
+}
+
+void PlayGame() 
+{
+    var play = true;
+
+    while (play) 
+    {
+        int target = random.Next(1,6);
+        int roll = random.Next(1,7);
+
+        Console.WriteLine($"Roll a number greater than {target} to win!");
+        Console.WriteLine($"You rolled a {roll}");
+        Console.WriteLine(WinOrLose(target,roll));
+        Console.WriteLine("\nPlay again? (Y/N)");
+
+        play = ShouldPlay();
+    }
+}
+
+string WinOrLose(int target,int roll)
+{    
+    if(roll > target)
+    {
+        return "You win!";
+    }
+    else
+    {
+        return "You lose!";
+    }
+}
