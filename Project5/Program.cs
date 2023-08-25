@@ -553,6 +553,7 @@ int[,] TwoCoins(int[] coins, int target)
     return result;
 }
 */
+/*
 using System.Runtime;
 
 Random random = new Random();
@@ -602,6 +603,80 @@ string WinOrLose(int target,int roll)
     }
     else
     {
-        return "You lose!";
+        return "You lose!";  
     }
+}
+*/
+//18 different species of animals, 6 groups of students, 
+/*
+three visiting schools: school A has 6 groups, school B has 3 groups, school C has 2 groups
+For each school: randomise the animals, assign the animals to correct number of groups, print
+the school name, print the animal groups
+*/
+using System;
+
+string[] pettingZoo =
+{
+    "alpacas", "capybaras", "chickens", "ducks", "emus", "geese", 
+    "goats", "iguanas", "kangaroos", "lemurs", "llamas", "macaws", 
+    "ostriches", "pigs", "ponies", "rabbits", "sheep", "tortoises"
+};
+
+RandomiseAnimals();
+string[,] group = AssignGroup();
+Console.WriteLine("School A");
+PrintGroup(group);
+
+PlanSchoolVisit("School A");
+PlanSchoolVisit("School B", 3);
+PlanSchoolVisit("School C", 2);
+
+void PrintGroup(string[,] groups)
+{
+    for (int i = 0; i < groups.GetLength(0); i++)
+    {
+        Console.Write($"Group {i+1}: ");
+        for (int j = 0; j < groups.GetLength(1);j++)
+        {
+            Console.Write($"{groups[i,j]}  ");
+        }
+        Console.WriteLine();
+    }
+}
+
+string[,] AssignGroup(int groups = 6)
+{
+    string[,] result = new string[groups,pettingZoo.Length/groups];
+    int start = 0;
+
+    for (int i = 0; i < groups;i++)
+    {
+        for (int j = 0; j < result.GetLength(1); j++)
+        {
+            result[i,j] = pettingZoo[start++];
+        }
+    }
+    return result;
+}
+
+void RandomiseAnimals()
+{
+    Random random = new Random();
+
+    for (int i = 0; i < pettingZoo.Length; i++)
+    {
+        int r = random.Next(i,pettingZoo.Length);
+
+        string temp = pettingZoo[r];
+        pettingZoo[r] = pettingZoo[i];
+        pettingZoo[i] = temp;
+    }
+}
+
+void PlanSchoolVisit(string schoolName, int groups = 6)
+{
+    RandomiseAnimals();
+    string[,] group = AssignGroup(groups);
+    Console.WriteLine(schoolName);
+    PrintGroup(group);
 }
