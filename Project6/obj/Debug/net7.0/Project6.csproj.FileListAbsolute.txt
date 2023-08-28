@@ -1,0 +1,15 @@
+/Users/michael/Desktop/Github_and_Programming/NET_and_CS/Github Files/CSharpLearning/Project6/bin/Debug/net7.0/Project6
+/Users/michael/Desktop/Github_and_Programming/NET_and_CS/Github Files/CSharpLearning/Project6/bin/Debug/net7.0/Project6.deps.json
+/Users/michael/Desktop/Github_and_Programming/NET_and_CS/Github Files/CSharpLearning/Project6/bin/Debug/net7.0/Project6.runtimeconfig.json
+/Users/michael/Desktop/Github_and_Programming/NET_and_CS/Github Files/CSharpLearning/Project6/bin/Debug/net7.0/Project6.dll
+/Users/michael/Desktop/Github_and_Programming/NET_and_CS/Github Files/CSharpLearning/Project6/bin/Debug/net7.0/Project6.pdb
+/Users/michael/Desktop/Github_and_Programming/NET_and_CS/Github Files/CSharpLearning/Project6/obj/Debug/net7.0/Project6.csproj.AssemblyReference.cache
+/Users/michael/Desktop/Github_and_Programming/NET_and_CS/Github Files/CSharpLearning/Project6/obj/Debug/net7.0/Project6.GeneratedMSBuildEditorConfig.editorconfig
+/Users/michael/Desktop/Github_and_Programming/NET_and_CS/Github Files/CSharpLearning/Project6/obj/Debug/net7.0/Project6.AssemblyInfoInputs.cache
+/Users/michael/Desktop/Github_and_Programming/NET_and_CS/Github Files/CSharpLearning/Project6/obj/Debug/net7.0/Project6.AssemblyInfo.cs
+/Users/michael/Desktop/Github_and_Programming/NET_and_CS/Github Files/CSharpLearning/Project6/obj/Debug/net7.0/Project6.csproj.CoreCompileInputs.cache
+/Users/michael/Desktop/Github_and_Programming/NET_and_CS/Github Files/CSharpLearning/Project6/obj/Debug/net7.0/Project6.dll
+/Users/michael/Desktop/Github_and_Programming/NET_and_CS/Github Files/CSharpLearning/Project6/obj/Debug/net7.0/refint/Project6.dll
+/Users/michael/Desktop/Github_and_Programming/NET_and_CS/Github Files/CSharpLearning/Project6/obj/Debug/net7.0/Project6.pdb
+/Users/michael/Desktop/Github_and_Programming/NET_and_CS/Github Files/CSharpLearning/Project6/obj/Debug/net7.0/Project6.genruntimeconfig.cache
+/Users/michael/Desktop/Github_and_Programming/NET_and_CS/Github Files/CSharpLearning/Project6/obj/Debug/net7.0/ref/Project6.dll
